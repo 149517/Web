@@ -1,0 +1,165 @@
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+}
+/*轮播图*/
+.rotation{
+
+    width: 1500px;
+    height: 720px;
+    margin-top:30px;
+    margin-bottom: 50px;
+
+    /*animation: image 24s linear infinite;*/
+    border: 10px #fff solid;
+    box-shadow: 1px 5px 10px #333333;
+    /*overflow: hidden;*/
+}
+#img-{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes image {
+    0%{
+        background-image: url("image/轮播图1.png");
+    }
+    33%{
+        background-image: url("image/轮播图2.png");
+    }
+    66%{
+        background-image: url("image/轮播图3.png");
+    }
+    100%{
+        background-image: url("image/轮播图1.png");
+    }
+}
+
+/*study区域*/
+.text{
+    /*text-align: center;*/
+}
+.entrance{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1500px;
+    height: 580px;
+    padding: 20px ;
+    padding-top: 80px;
+    column-count: 3;
+    background-color: white;
+    border-radius: 30px;
+
+}
+.entrance figure{
+    display: block;
+    height: 250px;
+    width: 400px;
+}
+.entrance figure img{
+    width: 356px;
+    height: 200px;
+}
+figcaption{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #00aae5;
+}
+/*鼠标划过突出显示效果*/
+.enlarge:hover{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+.strip{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1500px;
+    height: 680px;
+    background-color: white;
+    border-radius: 30px;
+}
+.film:nth-child(1){
+    margin-top: 84px;
+}
+.film {
+    /*margin-top: 10px;*/
+    margin-bottom: 3px;
+    width: 800px;
+    height: 175px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.42);
+    box-shadow: 1px 1px 10px #988888;
+}
+.film img{
+    width: 100px;
+    height: 148px;
+    float: left;
+}
+.film div {
+    width: 600px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 120px;
+    /*float: left;*/
+}
+.clear{
+    clear: both;
+}
+.red{
+    color: #d44b13;
+}
+
+.tit:nth-child(1){
+    font-size: 24px;
+    position: relative;
+    text-align: center;
+    /*height: 300px;*/
+    margin-bottom: -65px;
+    margin-top: 80px;
+    z-index: 3;
+}
+.tit-2{
+    font-size: 24px;
+    position: relative;
+    text-align: center;
+    /*height: 300px;*/
+    margin-bottom: -97px;
+    margin-top: 80px;
+    z-index: 3;
+}
+
+/*三角*/
+/*轮播图切换按钮*/
+.triangle-1{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px;
+    border-color: transparent #333333 transparent transparent;
+    margin-top: -380px;
+}
+.triangle-2{
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40px;
+    border-color: transparent transparent transparent #333333;
+    margin-top: -81px;
+    margin-left: 1392px;
+}
+.triangle{
+    opacity: 0.4;
+}
+.triangle:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 200ms linear;
+}

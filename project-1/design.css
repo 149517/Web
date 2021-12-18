@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    flex-direction: column;
+}
+/*大图*/
+#first{
+    text-align: center;
+    width: 1141px;
+    height: 427px;
+    border: 20px solid #ffffff;
+}
+
+/*图片*/
+.middle div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.image{
+    width: 440px;
+    height: 285px;
+    margin-right: 10px;
+}
+figcaption{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.image-2{
+    width: 660px;
+    height: 365px;
+    margin-right: 30px;
+}
+.middle{
+    margin-top: 50px;
+}
